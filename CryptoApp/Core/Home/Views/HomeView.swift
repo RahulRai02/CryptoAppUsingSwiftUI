@@ -21,6 +21,8 @@ struct HomeView: View {
             VStack{
                 homeHeader
                 
+                SearchBarView(searchText: $vm.searchText)
+                
                 columnTitle
                 
                 if !showPortfolio{
@@ -107,7 +109,7 @@ extension HomeView {
             }
             
             Text("Price")
-                .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+                .frame(width: UIScreen.main.bounds.width / 3, alignment: .trailing)
         }
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
