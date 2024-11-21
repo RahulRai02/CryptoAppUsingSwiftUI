@@ -49,7 +49,8 @@ extension CoinRowView {
                 .frame(minWidth: 30)
 //                .background(Color.red)
             
-            Circle()
+//            Circle()
+            CoinImageView(coin: coin)
                 .frame(width: 30, height: 30)
             Text(coin.symbol.uppercased())
                 .font(.headline)
